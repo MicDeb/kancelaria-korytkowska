@@ -20,7 +20,10 @@ export default function Post() {
       <Head title={dict.common.pages.post} />
       <WithQuery error={error} isLoading={isLoading}>
         <SectionWrapper title={data?.title || ''} wrapperClass="lg:grid-cols-1">
-          <div className="single-post mx-auto max-w-3xl" dangerouslySetInnerHTML={{ __html: data?.body || 'test' }}></div>
+          <div
+            className="single-post mx-auto max-w-3xl"
+            dangerouslySetInnerHTML={{ __html: data?.body || 'test' }}
+          ></div>
         </SectionWrapper>
       </WithQuery>
     </>
