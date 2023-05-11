@@ -15,6 +15,10 @@ export interface ISinglePost {
   post: ISinglePostBody;
 }
 
+export interface ISinglePostPageRequest {
+  post: ISinglePost,
+}
+
 export interface ISingleNodePost extends ISinglePost {
   uri: string;
   title: string;
