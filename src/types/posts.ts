@@ -16,7 +16,7 @@ export interface ISinglePost {
 }
 
 export interface ISinglePostPageRequest {
-  post: ISinglePost,
+  post: ISinglePost;
 }
 
 export interface ISingleNodePost extends ISinglePost {
