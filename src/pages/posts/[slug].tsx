@@ -1,4 +1,3 @@
-import { useQuery } from '@tanstack/react-query';
 import type { GetStaticPaths, GetStaticProps } from 'next';
 import { useRouter } from 'next/router';
 import { SectionWrapper } from '@/components/home-page/SectionWrapper';
