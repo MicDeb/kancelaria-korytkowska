@@ -35,7 +35,7 @@ export default function Team() {
     <>
       <Head title={dict.common.pages.team} />
       <WithQuery error={error} isLoading={isLoading}>
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
           <SectionWrapper title={dict.common.pages.team} wrapperClass="col-lg-1">
             <ul role="list" className="flex items-start justify-center gap-2 sm:gap-20">
               {teamPersons.map((person, index) => (

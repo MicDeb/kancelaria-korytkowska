@@ -16,7 +16,7 @@ export default function PolicyPrivacy() {
       <Head title={dict.common.pages.policyPrivacy} />
       <WithQuery error={error} isLoading={isLoading}>
         <SectionWrapper title={dict.common.pages.policyPrivacy} wrapperClass="lg:grid-cols-1">
-          <div className="policy-privacy mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div className="policy-privacy mx-auto max-w-7xl sm:px-6 lg:px-8">
             {data && <div dangerouslySetInnerHTML={{ __html: data }}></div>}
           </div>
         </SectionWrapper>

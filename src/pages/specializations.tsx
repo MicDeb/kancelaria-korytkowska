@@ -50,7 +50,7 @@ export default function Team() {
     <>
       <Head title={dict.common.pages.specializations} />
       <WithQuery error={error} isLoading={isLoading}>
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl sm:px-6 lg:px-8">
           <SectionWrapper title={dict.common.pages.specializations} wrapperClass="gap-y-8 grid-cols-2 lg:grid-cols-5">
             {specializationsArray.map((specialization, index) => (
               <div
@@ -58,14 +58,14 @@ export default function Team() {
                 className={specializationItemClass(index)}
                 onClick={() => handelSpecializationClick(index)}
               >
-                <div className="flex flex-col gap-x-4 p-4">
+                <div className="flex flex-col gap-x-4 p-4 sm:p-6">
                   <Image src={specialization.image.sourceUrl} alt={specialization.image.title} width={40} height={40} />
                   <div className="mt-3 font-header font-bold sm:text-xl">{specialization.title}</div>
                 </div>
               </div>
             ))}
           </SectionWrapper>
-          <div className="pt-10" ref={descriptionRef}>
+          <div className="px-8 pt-10" ref={descriptionRef}>
             {specializationsArray.length && (
               <div
                 className="specializations-page mx-auto max-w-3xl"

@@ -20,9 +20,21 @@
     margin-left: 2rem;
 }
 
-.policy-privacy ol li {
+.policy-privacy ol li,
+.single-post ol li {
     list-style: auto;
     margin-left: 2rem;
+}
+
+.single-post h1,
+.single-post h2,
+.single-post h3,
+.single-post h4,
+.single-post h5,
+.single-post h6 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
 }
 
 

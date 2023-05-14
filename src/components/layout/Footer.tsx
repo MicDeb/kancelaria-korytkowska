@@ -12,7 +12,7 @@ interface IFooter extends IMenuItems {
 
 export const Footer = ({ nodes, companyName, contact }: IFooter) => {
   return (
-    <footer className="mt-40 bg-primary">
+    <footer className="mt-20 bg-primary">
       <div className="mx-auto max-w-7xl overflow-hidden px-6 py-20 sm:py-24 lg:px-8">
         <nav className="-mb-6 columns-2 sm:flex sm:flex-wrap sm:justify-center sm:space-x-12" aria-label="Footer">
           {nodes.map((item) => (
