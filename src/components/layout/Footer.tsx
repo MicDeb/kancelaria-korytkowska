@@ -17,13 +17,16 @@ export const Footer = ({ nodes, companyName, contact }: IFooter) => {
         <nav className="-mb-6 columns-2 sm:flex sm:flex-wrap sm:justify-center sm:space-x-12" aria-label="Footer">
           {nodes.map((item) => (
             <div key={item.id} className="pb-6">
-              <Link href={item.uri} className="text-sm uppercase leading-6 text-white hover:text-white">
+              <Link href={`/${item.uri}`} className="text-sm uppercase leading-6 text-white hover:text-white">
                 {item.label}
               </Link>
             </div>
           ))}
           <div key={routeLinks.policyPrivacy} className="pb-6">
-            <Link href={routeLinks.policyPrivacy} className="text-sm uppercase leading-6 text-white hover:text-white">
+            <Link
+              href={`/${routeLinks.policyPrivacy}`}
+              className="text-sm uppercase leading-6 text-white hover:text-white"
+            >
               {dict.common.pages.policyPrivacy}
             </Link>
           </div>

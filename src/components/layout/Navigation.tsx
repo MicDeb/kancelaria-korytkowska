@@ -12,6 +12,7 @@ interface INavigationProps {
   logo?: IMediaItemSingle;
 }
 export const Navigation = ({ nodes, logo }: INavigationProps) => {
+  console.log('nodes', nodes)
   const pathname = usePathname();
   const isSelected = (uri: string) => pathname.includes(uri);
   return (
@@ -38,7 +39,7 @@ export const Navigation = ({ nodes, logo }: INavigationProps) => {
                   {nodes.map((item) => (
                     <Link
                       key={item.id}
-                      href={item.uri}
+                      href={`/${item.uri}`}
                       className={clsx(
                         isSelected(item.uri)
                           ? 'text-gray-900'
@@ -72,7 +73,7 @@ export const Navigation = ({ nodes, logo }: INavigationProps) => {
                 <Disclosure.Button
                   key={item.id}
                   as={Link}
-                  href={item.uri}
+                  href={`/${item.uri}`}
                   className={clsx(
                     isSelected(item.uri)
                       ? 'text-gray-900'
