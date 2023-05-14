@@ -1,4 +1,4 @@
-import { fetchAPI } from '@/lib/api';
+import { fetchAPI } from '@/lib/api/api';
 import type { IAboutPage } from '@/types/about';
 
 export const query = `

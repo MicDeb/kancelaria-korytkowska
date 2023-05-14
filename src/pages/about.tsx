@@ -3,7 +3,7 @@ import { SectionWrapper } from '@/components/home-page/SectionWrapper';
 import { Head } from '@/components/shared/Head';
 import { WithQuery } from '@/components/shared/WithQuery';
 import { dict } from '@/dictionary';
-import { getAbout } from '@/lib/getAbout';
+import { getAbout } from '@/lib/api/getAbout';
 
 export default function About() {
   const { data, isLoading, error } = useQuery({

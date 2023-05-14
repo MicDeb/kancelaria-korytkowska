@@ -5,12 +5,24 @@
 .about-page p,
 .team-page p,
 .specializations-page p,
-.policy-privacy p {
+.policy-privacy p,
+.policy-privacy ul,
+.policy-privacy ol,
+.single-post ul,
+.single-post ol,
+.single-post p {
     margin-bottom: 1rem;
 }
 
-.specializations-page li,
-.policy-privacy li {
+.specializations-page ul li,
+.policy-privacy ul li {
     list-style: disc;
     margin-left: 2rem;
 }
+
+.policy-privacy ol li {
+    list-style: auto;
+    margin-left: 2rem;
+}
+
+

@@ -1,4 +1,4 @@
-import { fetchAPI } from '@/lib/api';
+import { fetchAPI } from '@/lib/api/api';
 import type { IPolicyPrivacy } from '@/types/policyPrivacy';
 
 export const query = `

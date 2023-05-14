@@ -1,7 +1,7 @@
 export const dict = {
   common: {
     pages: {
-      about: 'O nas',
+      about: 'Kancelaria',
       contact: 'Kontakt',
       home: 'Strona główna',
       news: 'Aktualności',

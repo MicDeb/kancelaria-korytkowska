@@ -13,6 +13,7 @@ export interface ISinglePostBody {
 
 export interface ISinglePost {
   post: ISinglePostBody;
+  date: string;
 }
 
 export interface ISinglePostPageRequest {

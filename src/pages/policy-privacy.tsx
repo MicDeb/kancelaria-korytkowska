@@ -3,7 +3,7 @@ import { SectionWrapper } from '@/components/home-page/SectionWrapper';
 import { Head } from '@/components/shared/Head';
 import { WithQuery } from '@/components/shared/WithQuery';
 import { dict } from '@/dictionary';
-import { getPolicyPrivacy } from '@/lib/getPrivacyPolicy';
+import { getPolicyPrivacy } from '@/lib/api/getPrivacyPolicy';
 
 export default function PolicyPrivacy() {
   const { data, isLoading, error } = useQuery({

@@ -1,4 +1,4 @@
-import { fetchAPI } from '@/lib/api';
+import { fetchAPI } from '@/lib/api/api';
 import type { ISinglePostPageRequest } from '@/types/posts';
 
 export const query = (slug: string) => `
@@ -12,11 +12,16 @@ export const query = (slug: string) => `
           shortDescription
           title
         }
+        date
       }
     }
 `;
 
 export async function getPost(slug: string) {
   const data = await fetchAPI<ISinglePostPageRequest>(query(slug));
-  return data?.post.post;
+  console.log('data', data?.post);
+  return {
+    ...data?.post.post,
+    date: data?.post.date
+  };
 }

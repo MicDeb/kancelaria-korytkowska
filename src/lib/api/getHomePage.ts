@@ -1,5 +1,5 @@
-import { fetchAPI } from '@/lib/api';
-import { postsQuery } from '@/lib/getPosts';
+import { fetchAPI } from '@/lib/api/api';
+import { postsQuery } from '@/lib/api/getPosts';
 import type { IHomePage } from '@/types/homePage';
 import type { IPosts } from '@/types/posts';
 

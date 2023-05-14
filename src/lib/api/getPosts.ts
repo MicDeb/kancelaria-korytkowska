@@ -1,4 +1,4 @@
-import { fetchAPI } from '@/lib/api';
+import { fetchAPI } from '@/lib/api/api';
 import type { IPosts } from '@/types/posts';
 
 export const postsQuery = `

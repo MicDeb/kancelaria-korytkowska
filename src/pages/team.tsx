@@ -7,7 +7,7 @@ import { SectionWrapper } from '@/components/home-page/SectionWrapper';
 import { Head } from '@/components/shared/Head';
 import { WithQuery } from '@/components/shared/WithQuery';
 import { dict } from '@/dictionary';
-import { getTeam } from '@/lib/getTeam';
+import { getTeam } from '@/lib/api/getTeam';
 import type { IPerson } from '@/types/team';
 
 export default function Team() {
@@ -37,13 +37,13 @@ export default function Team() {
       <WithQuery error={error} isLoading={isLoading}>
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <SectionWrapper title={dict.common.pages.team} wrapperClass="col-lg-1">
-            <ul role="list" className="flex items-center justify-center gap-20">
+            <ul role="list" className="flex items-start justify-center gap-2 sm:gap-20">
               {teamPersons.map((person, index) => (
                 <li key={person.title} className={personItemClass(index)} onClick={() => setSelectedPersonIndex(index)}>
-                  <div className="flex flex-col items-center p-6">
+                  <div className="flex flex-col items-center sm:p-6">
                     <Image src={person.image.sourceUrl} alt={person.image.title} width={400} height={547} />
 
-                    <div className="mt-4 font-header text-3xl font-bold leading-6 text-primary">{person.title}</div>
+                    <div className="mt-4 font-header font-bold leading-6 text-primary sm:text-3xl">{person.title}</div>
                   </div>
                 </li>
               ))}

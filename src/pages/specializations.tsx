@@ -7,7 +7,7 @@ import { SectionWrapper } from '@/components/home-page/SectionWrapper';
 import { Head } from '@/components/shared/Head';
 import { WithQuery } from '@/components/shared/WithQuery';
 import { dict } from '@/dictionary';
-import { getSpecializations } from '@/lib/getSpecializations';
+import { getSpecializations } from '@/lib/api/getSpecializations';
 import type { ISpecializationField } from '@/types/specializations';
 
 export default function Team() {

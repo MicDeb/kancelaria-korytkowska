@@ -3,7 +3,7 @@ import { SectionWrapper } from '@/components/home-page/SectionWrapper';
 import { Head } from '@/components/shared/Head';
 import { WithQuery } from '@/components/shared/WithQuery';
 import { dict } from '@/dictionary';
-import { getContact } from '@/lib/getContact';
+import { getContact } from '@/lib/api/getContact';
 import type { IContactFieldsKeys } from '@/types/contact';
 
 export default function Contact() {

@@ -7,9 +7,9 @@ import { TrustUsSection } from '@/components/home-page/TrustUsSection';
 import { Head } from '@/components/shared/Head';
 import { WithQuery } from '@/components/shared/WithQuery';
 import { dict } from '@/dictionary';
-import { getHomePage } from '@/lib/getHomePage';
-import { getSpecializations } from '@/lib/getSpecializations';
-import { getTeam } from '@/lib/getTeam';
+import { getHomePage } from '@/lib/api/getHomePage';
+import { getSpecializations } from '@/lib/api/getSpecializations';
+import { getTeam } from '@/lib/api/getTeam';
 
 export default function Home() {
   const queries = useQueries({

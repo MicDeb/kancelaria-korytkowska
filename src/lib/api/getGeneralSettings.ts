@@ -1,5 +1,7 @@
-import { fetchAPI } from '@/lib/api';
+import { fetchAPI } from '@/lib/api/api';
+import { queryContactPage } from '@/lib/api/getContact';
 import type { IAllSettings } from '@/types/allSettings';
+import type { IContactPage } from '@/types/contact';
 import type { IMediaItem } from '@/types/mediaItem';
 import type { IMainMenu, INode } from '@/types/menuItems';
 
@@ -27,6 +29,7 @@ const query = `
       title
       sourceUrl
     }
+    ${queryContactPage}
   }
 `;
 
@@ -46,13 +49,14 @@ const getNodes = (nodes: INode[] | undefined) => {
 };
 
 export async function getGeneralSettings() {
-  const data = await fetchAPI<IMainMenu & IMediaItem & IAllSettings>(query);
+  const data = await fetchAPI<IMainMenu & IMediaItem & IAllSettings & IContactPage>(query);
   return {
     ...data?.menu,
     menuItems: {
       nodes: getNodes(data?.menu?.menuItems?.nodes)
     },
     logo: data?.mediaItem,
-    allSettings: data?.allSettings
+    allSettings: data?.allSettings,
+    contact: data?.page.contact
   };
 }

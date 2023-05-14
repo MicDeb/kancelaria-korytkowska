@@ -20,7 +20,7 @@ module.exports = {
       },
       text: {
         header: colorsPalette.header,
-        label: colorsPalette.label,
+        main: colorsPalette.label,
       },
       white: colorsPalette.white,
       transparent: colorsPalette.transparent

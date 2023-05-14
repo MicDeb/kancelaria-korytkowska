@@ -5,7 +5,7 @@ import { Body } from '@/components/layout/Body';
 import { Footer } from '@/components/layout/Footer';
 import { Navigation } from '@/components/layout/Navigation';
 import LoadingSpinner from '@/components/shared/LoadingSpinner';
-import { getGeneralSettings } from '@/lib/getGeneralSettings';
+import { getGeneralSettings } from '@/lib/api/getGeneralSettings';
 import type { IChildren } from '@/types/nextGlobals';
 
 export const Layout: FC<IChildren> = ({ children }) => {
@@ -29,7 +29,11 @@ export const Layout: FC<IChildren> = ({ children }) => {
         <>
           <Navigation nodes={data.menuItems.nodes} logo={data.logo} />
           <Body>{children}</Body>
-          <Footer companyName={data?.allSettings?.generalSettingsTitle || ''} nodes={data.menuItems.nodes} />
+          <Footer
+            companyName={data?.allSettings?.generalSettingsTitle || ''}
+            nodes={data.menuItems.nodes}
+            contact={data.contact}
+          />
         </>
       )}
     </div>

@@ -34,7 +34,7 @@ export const Navigation = ({ nodes, logo }: INavigationProps) => {
                     )}
                   </Link>
                 </div>
-                <div className="hidden sm:-my-px sm:ml-6 sm:flex sm:space-x-8">
+                <div className="hidden lg:-my-px lg:ml-6 lg:flex lg:space-x-8">
                   {nodes.map((item) => (
                     <Link
                       key={item.id}
@@ -52,7 +52,7 @@ export const Navigation = ({ nodes, logo }: INavigationProps) => {
                   ))}
                 </div>
               </div>
-              <div className="-mr-2 flex items-center sm:hidden">
+              <div className="-mr-2 flex items-center lg:hidden">
                 {/* Mobile menu button */}
                 <Disclosure.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 focus:outline-none focus:ring-2 focus:ring-offset-2">
                   <span className="sr-only">Open main menu</span>
@@ -66,7 +66,7 @@ export const Navigation = ({ nodes, logo }: INavigationProps) => {
             </div>
           </div>
 
-          <Disclosure.Panel className="sm:hidden">
+          <Disclosure.Panel className="lg:hidden">
             <div className="space-y-1 pb-3 pt-2">
               {nodes.map((item) => (
                 <Disclosure.Button
