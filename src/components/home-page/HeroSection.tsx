@@ -14,7 +14,7 @@ export default function HeroSection({ heroImage, heroText, heroDescription }: IH
       />
       <div className="absolute left-0 top-0 -z-10 h-full w-full bg-primary opacity-50" />
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <div className="mx-auto max-w-3xl py-32 sm:py-48 lg:py-56">
+        <div className="mx-auto max-w-3xl py-20 sm:py-48 lg:py-56">
           <div className="text-center">
             <h1 className="font-header text-4xl font-bold text-white sm:text-7xl">{heroText}</h1>
             <p className="mt-6 text-lg leading-8 text-white">{heroDescription}</p>

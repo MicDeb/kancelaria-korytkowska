@@ -14,7 +14,7 @@ export const SectionWrapper = ({ children, title, wrapperClass = 'lg:grid-cols-3
   );
   return (
     <div className="px-4 pt-20 sm:pt-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <div className="mx-auto lg:px-8">
         <div className="mx-auto max-w-2xl sm:text-center">
           <PageHeader text={title} />
         </div>

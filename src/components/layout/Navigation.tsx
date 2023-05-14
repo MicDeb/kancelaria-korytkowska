@@ -19,7 +19,7 @@ export const Navigation = ({ nodes, logo }: INavigationProps) => {
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="flex h-28 justify-between">
+            <div className="flex h-20 justify-between lg:h-28">
               <div className="flex w-full justify-between">
                 <div className="flex flex-shrink-0 items-center">
                   <Link href="/">
