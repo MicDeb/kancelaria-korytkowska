@@ -19,7 +19,6 @@ export const query = (slug: string) => `
 
 export async function getPost(slug: string) {
   const data = await fetchAPI<ISinglePostPageRequest>(query(slug));
-  console.log('data', data?.post);
   return {
     ...data?.post.post,
     date: data?.post.date

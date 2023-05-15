@@ -12,7 +12,6 @@ interface INavigationProps {
   logo?: IMediaItemSingle;
 }
 export const Navigation = ({ nodes, logo }: INavigationProps) => {
-  console.log('nodes', nodes)
   const pathname = usePathname();
   const isSelected = (uri: string) => pathname.includes(uri);
   return (
